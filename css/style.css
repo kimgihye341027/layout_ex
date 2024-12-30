@@ -1,1 +1,127 @@
 @charset "utf-8";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+/* 전체레이아웃 */
+.container{
+    width: 1200px;
+    height: 1000px;
+    background-color: bisque;
+    margin: auto;
+}
+/* 상단 */
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: #004455;
+}
+/* 로고 */
+.logo{
+    width: 300px;
+    background-color: aquamarine;
+    float: left;
+    /* 텍스트 세로 가로 중간정렬 */
+    line-height: 100px;
+    text-align: center;
+    
+}
+.logo h1{
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif
+
+}
+/* 메뉴 */
+nav{
+    position: relative;
+    width: 900px;
+    background-color: rgb(153, 153, 255);
+    float: right;
+    height: 100%;
+}
+#topMenu{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: calc(100% - 100px);
+    height: 60px;
+    margin-top: 40px;
+    background-color: yellow;
+}
+#topMenu li a{
+    float: left;
+    width: calc(100% / 4);
+    line-height: 60px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: aqua;
+}
+
+#topMenu li a:hover{
+    background-color: rgb(9, 45, 45);
+    color: #fff;
+    
+}
+/* 메인 */
+.contents{
+    width: 100%;
+    height: 800px;
+    background-color: cadetblue;
+}
+/*hilling*/
+.hilling{
+    width: 100%;
+    height: calc( 100% / 2 );
+    background-color: rgb(192, 83, 165);
+}
+.hilling h2{
+    background-color: rgb(78, 35, 78);
+}
+/* 설명 */
+.decripton{
+    width: 100%;
+    height: 300px;
+    background-color: skyblue;
+}
+.dec-img{
+    float: left;
+    width:450px;
+    height: 100%;
+    background-color: tomato;
+}
+.dec-detail{
+    float: left;
+    width: calc(100% - 450px);
+    height: 100%;
+    background-color: #004455;
+}
+.detail-top{
+    height: calc( 100% / 2);
+    background-color: yellowgreen;
+}
+.detail-bottom{
+    height: calc(100% / 2);
+    background-color: #36494e;
+}
+
+/*activity*/
+.activity{
+    height: calc( 100% / 2);
+    background-color: gainsboro;
+}
+
+
+/* 하단 */
